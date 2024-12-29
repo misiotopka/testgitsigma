@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMR Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 2rem;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        section {
+            display: none;
+        }
+        section.active {
+            display: block;
+        }
+        .package {
+            display: none;
+        }
+        .package.active {
+            display: block;
+        }
+        .package-link {
+            display: block;
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .package-link:hover {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+        }
+        .package {
+            padding: 1rem;
+            margin: 1rem 0;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .package h2 {
+            margin-top: 0;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p, ul {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>CMR Studio</h1>
+</header>
+<nav>
+    <a href="#about"><i class="fa-solid fa-house"></i></a>
+    <a href="#services"><i class="fa-solid fa-screwdriver-wrench"></i></a>
+    <a href="#contact"><i class="fa-solid fa-phone"></i></a>
+    <a href="#packages"><i class="fa-solid fa-box"></i></a>
+</nav>
+<div class="container">
+    <section id="about" class="active">
+        <h2>O nas</h2>
+        <p>CMR Studio to wiodące studio filmowe oferujące najnowocześniejsze udogodnienia dla wszystkich Twoich potrzeb produkcyjnych.</p>
+    </section>
+
+
+    <section id="services">
+
+        <h2>Nasze Usługi</h2>
+ 
+        <div class="service-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323018173859102843/baner_reklamowy.png?ex=6772fc31&is=6771aab1&hm=5307fe6849c4214ad3fcc8304759ec3e766a95098ba2b83337efb8516e901872');">
+            <h2>Reklama</h2>
+        </div>
+
+        <div class="slub-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323028708721954968/Nowy_projekt.png?ex=67730600&is=6771b480&hm=a1e2d74789530bde0e015a8ee735e84f19ca2aea1cf5d7f0fd0f75e24d3573f3&');">
+            <h2>Ślub</h2>
+        </div>
+
+        <div class="montaz-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323030062139965450/Nowy_projekt3.png?ex=67730743&is=6771b5c3&hm=000cde42935ad04f80efd600cfd1d6aa267b8de81c4354af5bb028b585a1714f&');">
+            <h2>Montaż</h2>
+        </div>
+        <div class="event-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323030379090939994/Nowy_projekt4.png?ex=6773078f&is=6771b60f&hm=2fa8fe57999e04c1aa3008a4243b7531697092e7178983571fdf150a4d628fc1&');">
+            <h2>Event</h2>
+        </div>
+        <div class="teledysk-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323030834231644191/Nowy_projekt5.png?ex=677307fb&is=6771b67b&hm=ab3ce03403c3893df884b1b4abc80a156e1090bf56ba9a6d964d885e59efc98e&');">
+            <h2>Teledysk</h2>
+        </div>
+        <div class="dron-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323031448755769454/Nowy_projekt6.png?ex=6773088e&is=6771b70e&hm=21c21b43c3457d2a692733094fc91adba5f499e91dcabef14f4093113fe27436&');">
+            <h2>Dron</h2>
+        </div>
+        <div class="wywiad-banner" style="background-image: url('https://cdn.discordapp.com/attachments/1311666422430171288/1323029248142741565/Nowy_projekt2.png?ex=67730681&is=6771b501&hm=6bc91cb7e5caec67535a9a7e5fb52553993700e825d4b49396c4d5d4aee59538&');">
+            <h2>Wywiad</h2>
+        </div>
+        <style>
+            .service-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+            }
+            .service-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .slub-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 15%;
+            }
+            .slub-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .wywiad-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 28.5%;
+            }
+            .wywiad-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .montaz-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 42%;
+            }
+            .montaz-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .event-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 55.5%;
+            }
+            .event-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .teledysk-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 69%;
+            }
+            .teledysk-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+            .dron-banner {
+                width: 10%;
+                height: 300px;
+                background-size: cover;
+                background-position: center;
+                filter: grayscale(100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2rem;
+                transition: filter 0.3s;
+                position: absolute;
+                left: 82.5%;
+            }
+            .dron-banner:hover {
+                filter: grayscale(0%);
+            }
+/*--------------------------------------------*/
+
+
+        </style>
+
+    </section>
+    <section id="contact">
+        <h2>Skontaktuj się z nami</h2>
+        <p>Email: info@cmrstudio.com</p>
+        <p>Telefon: nasz numer</p>
+    </section>
+    <section id="packages">
+        <h2>Nasze pakiety</h2>
+        <ul>
+            <li><a href="#package-2k" class="package-link">Pakiet 1</a></li>
+            <li><a href="#package-4k" class="package-link">Pakiet 2</a></li>
+            <li><a href="#package-5k" class="package-link">Pakiet 3</a></li>
+            <li><a href="#package-10k" class="package-link">Pakiet 4</a></li>
+        </ul>
+    </section>
+    <section id="package-2k" class="package">
+        <h2>pakiet 1</h2>
+        <p>Obejmuje podstawowe usługi filmowania i montażu.</p>
+    </section>
+    <section id="package-4k" class="package">
+        <h2>pakiet 2</h2>
+        <p>Obejmuje zaawansowane usługi filmowania, montażu i postprodukcji.</p>
+    </section>
+    <section id="package-5k" class="package">
+        <h2>pakiet 3</h2>
+        <p>Obejmuje najwyższej jakości usługi filmowania, montażu, postprodukcji</p>
+    </section>
+    <section id="package-10k" class="package">
+        <h2>pakiet 4</h2>
+        <p>Obejmuje najwyższej jakości usługi filmowania, montażu, postprodukcji dodatkowo to tego ujęcia z drona.</p>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2025 CMR Studio. Wszelkie prawa zastrzeżone.</p>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('section');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+
+        const packageLinks = document.querySelectorAll('.package-link');
+        packageLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    });
+</script>
+</body>
+</html>
